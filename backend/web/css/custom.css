@@ -1,0 +1,120 @@
+.gui-controls > li > a
+{
+  font-size: 11px !important;
+}
+.form-control{
+  font-size: 13px !important;
+}
+.card-head{
+  line-height: 42px!important;
+  min-height: 45px!important;
+}
+.card-head header {
+  font-size: 16px !important;
+}
+.card-body{
+  font-size: 12px!important;
+}
+.btn{
+  font-size: 13px!important;
+}
+
+/*Check box Active / deactive button */
+.ch-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  margin-bottom: 0px!important;
+  top:4px;
+}
+
+.ch-switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0aa89e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0aa89e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*************************************/
+
+#remove-image .row div{
+  padding-top: 15px;
+}
+
+
+/*===============*/
+.alert-success{
+  background-color: #00a65a;
+  color: #fff;
+  border-color: #00a65a;
+  animation: alerts;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes alerts {
+  0%{transform: translateY(400px);}
+  100%{transform: translateY(0);}
+}
+
+.alert-danger{
+  background-color: #00a65a;
+  color: #fff;
+  border-color: #00a65a;
+  animation: alerts-danger;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+@keyframes alerts-danger {
+  0%{transform: translateY(-200px);}
+  100%{transform: translateY(0);}
+}
+
+.grid-view tbody td a{
+  padding-right: 15px !important;
+}
+
+.thumbnail{
+  display: inline !important;
+}
